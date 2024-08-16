@@ -34,8 +34,6 @@ public class TestJuegoDeLaVida {
     
    assertTrue(caso1.size()==4);
 
-
-
     }
 
 
@@ -52,20 +50,21 @@ public class TestJuegoDeLaVida {
     caso2.add (1, "Vecino2");
     caso2.add (2, "Vecino3");
     caso2.add (3, "Vecino4");
+    caso2.add (4,"Vecino5");
 
     assertEquals("Vecino1", caso2.get(0));
     assertEquals("Vecino2", caso2.get(1));
     assertEquals("Vecino3", caso2.get(2));
     assertEquals("Vecino4", caso2.get(3));
-
-
-   caso2.remove(3);
+    assertEquals("Vecino5", caso2.get(4));
+ 
+   caso2.remove(4);
 
    assertEquals("Vecino1", caso2.get(0));
    assertEquals("Vecino2", caso2.get(1));
    assertEquals("Vecino3", caso2.get(2));
-
-   assertTrue(caso2.size()==3);
+   assertEquals("Vecino4", caso2.get(3));
+   assertTrue(caso2.size()==4);
 
 
 
